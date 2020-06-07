@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+    <com.example.lasthomework.CustomView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/video"/>
+    <com.example.lasthomework.Like
+        android:id="@+id/like"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/firstImage"/>
+    <View
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/playbtn"
+        android:layout_gravity="center"
+        android:background="@mipmap/play"/>
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="300dp"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:id="@+id/heart"
+            android:background="@mipmap/ic_heart_off"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/likecount"
+            android:text="0"
+            android:layout_marginLeft="8dp"
+            android:textColor="#fff"/>
+<!--        <view-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:background="@drawable/ic_share_black_24dp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:text="分享"-->
+<!--            android:textColor="#fff"-->
+<!--            android:layout_marginBottom="180dp"/>-->
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="25sp"
+        android:id="@+id/nickname"
+            android:textColor="#fff"
+        android:text="\@nickname"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="20sp"
+            android:id="@+id/description"
+            android:textColor="#fff"
+            android:text="hahahahhahah"/>
+
+    </LinearLayout>
+
+</FrameLayout>
